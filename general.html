@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxiQuizer!</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <p id="logo"> <i class="fa-solid fa-earth-europe"></i> MaxiQuizer</p>
+            <div class="navbar-buttons">
+                <a href="/history.html">History</a>
+                <a href="/index.html">Geography</a>
+                <a href="/general.html">General knowledge</a>
+                <a href="/mythology.html">Mythology</a>
+            </div>
+            <div class="navbar-burger" onclick="openMenu()">
+                <span id="burger" class=""></span>
+            </div>
+        </div>
+
+    </header>
+    <div class="main-panel">
+        <div class="question">
+            <h4 id="question-category"></h4>
+            <h1 id="question-text"></h1>
+
+            <div class="answers">
+                <p id="answer1" class="answer"></p>
+                <p id="answer2" class="answer"></p>
+                <p id="answer3" class="answer"></p>
+                <p id="answer4" class="answer"></p>
+            </div>
+            <div class="numbers">
+                <span class="question-number">
+                    1
+                </span>
+                <span class="question-number">
+                    2
+                </span>
+                <span class="question-number">
+                    3
+                </span>
+                <span class="question-number">
+                    4
+                </span>
+                <span class="question-number">
+                    5
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id='mobile-menu' class="mobile-menu closed">
+        <a href="/history.html">History</a>
+        <a href="/index.html">Geography</a>
+        <a href="/general.html">General knowledge</a>
+        <a href="/mythology.html">Mythology</a>
+    </div>
+    <div id='finalScreen' class="score">
+        <div class="score-panel">
+            <p id="scorePoints">
+            </p>
+            <p id="scoreComment"></p><br>
+            <button onclick="restart()">
+                Try again <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
